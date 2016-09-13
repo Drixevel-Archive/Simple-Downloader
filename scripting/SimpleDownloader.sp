@@ -12,15 +12,15 @@ ConVar hConVars[3];
 public Plugin myinfo = 
 {
 	name = PLUGIN_NAME,
-	author = PLUGIN_AUTHOR,
+	author = "Keith Warren (Drixevel)",
 	description = "Allows server operators to create/setup custom files for the server to download & precache.",
-	version = Keith Warren (Drixevel),
+	version = PLUGIN_VERSION,
 	url = "http://www.drixevel.com/"
 };
 
 public void OnPluginStart()
 {
-	hConVars[0] = CreateConVar("simpledownloader_version", PLUGIN_VERSION, PLUGIN_NAME, FCVAR_REPLICATED|FCVAR_NOTIFY|FCVAR_PLUGIN|FCVAR_SPONLY|FCVAR_DONTRECORD);
+	hConVars[0] = CreateConVar("simpledownloader_version", PLUGIN_VERSION, PLUGIN_NAME, FCVAR_REPLICATED|FCVAR_NOTIFY|FCVAR_SPONLY|FCVAR_DONTRECORD);
 	hConVars[1] = CreateConVar("sm_simpledownloader_status", "1", "Status of the plugin: (1 = on, 0 = off)", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	hConVars[2] = CreateConVar("sm_simpledownloader_config", "configs/simpledownloader.cfg", "Full path of the configuration file to load: (IE: configs/simpledownloader.cfg)", FCVAR_NOTIFY);
 	
