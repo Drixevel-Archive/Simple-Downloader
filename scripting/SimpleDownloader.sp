@@ -12,10 +12,10 @@ ConVar hConVars[3];
 public Plugin myinfo = 
 {
 	name = PLUGIN_NAME,
-	author = "Keith Warren (Drixevel)",
+	author = "Keith Warren (Shaders Allen)",
 	description = "Allows server operators to create/setup custom files for the server to download & precache.",
 	version = PLUGIN_VERSION,
-	url = "http://www.drixevel.com/"
+	url = "http://www.shadersallen.com/"
 };
 
 public void OnPluginStart()
